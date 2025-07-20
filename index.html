@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <link href="./main.css" rel="stylesheet" />
+  <link href="./faq-container.css" rel="stylesheet" />
+  <script src="./methods.js" defer></script>
+</head>
+
+<body>
+  <main>
+
+    <div class="faq-container">
+      <div class="faq-container__header"> <img src="./assets/images/icon-star.svg" loading="lazy"
+          alt="Decortive star icon" />
+        <h1>FAQs</h1>
+      </div>
+      <section>
+        <div class="faq-container__accordion">
+          <div class="faq-container__accordion__item">
+            <button name="question-1" id="question-1" class="faq-container__accordion__item__header">What is
+              Frontend Mentor, and how will it help me? <img src="./assets//images/icon-plus.svg"
+                alt="Show question answer" class="faq-container__accordion__item__header__expand__icon"
+                loading="lazy" />
+
+              <img src="./assets//images/icon-minus.svg" alt="Hide question answer"
+                class="faq-container__accordion__item__header__hide__icon" loading="lazy" />
+
+            </button>
+            <div class="faq-container__accordion__item__content">
+              <p>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding
+                skills with projects in HTML, CSS and Javascript. I'ts suitable for all levels and ideal for portolio
+                building.</p>
+            </div>
+          </div>
+
+          <div class="faq-container__accordion__item">
+            <button name="question-3" id="question-2" class="faq-container__accordion__item__header">Is Frontend Mentor
+              free? <img src="./assets//images/icon-plus.svg" alt="Show question answer"
+                class="faq-container__accordion__item__header__expand__icon" loading="lazy" />
+
+              <img src="./assets//images/icon-minus.svg" alt="Hide question answer"
+                class="faq-container__accordion__item__header__hide__icon" loading="lazy" />
+            </button>
+            <div class="faq-container__accordion__item__content">Lorem Ipsum</div>
+          </div>
+
+                    <div class="faq-container__accordion__item">
+            <button name="question-3" id="question-2" class="faq-container__accordion__item__header">Can i get help if I'm stuck on a challenge? <img src="./assets//images/icon-plus.svg" alt="Show question answer"
+                class="faq-container__accordion__item__header__expand__icon" loading="lazy" />
+
+              <img src="./assets//images/icon-minus.svg" alt="Hide question answer"
+                class="faq-container__accordion__item__header__hide__icon" loading="lazy" />
+            </button>
+            <div class="faq-container__accordion__item__content">Lorem Ipsum</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
