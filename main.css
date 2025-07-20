@@ -1,7 +1,8 @@
 :root {
-    --primary-base: hsl(292, 16%, 49%);
+    --primary-base: rgb(173, 40, 235);
+    --primary-neutral: hsl(292, 16%, 49%);
     --primary-secondary: hsl(292, 42%, 14%);
-    --primary-neutral: hsl(275, 100%, 97%);
+    --primary-bg-neutral: hsl(275, 100%, 97%);
     --neutral-base: hsl(0, 100%, 100%);
 }
 
@@ -11,23 +12,26 @@
     font-weight: 400;
     font-size: normal;
 }
+
 @font-face {
     font-family: 'Work Sans';
     src: url('./assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-size: normal;
 }
+
 @font-face {
     font-family: 'Work Sans';
     src: url('./assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-size: normal;
 }
+
 body {
     font-family: 'Work Sans', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--primary-neutral);
+    background-color: var(--primary-bg-neutral);
     padding: 0;
     margin: 0;
 }
@@ -42,21 +46,45 @@ h6 {
     color: var(--primary-secondary);
     padding: 0;
     margin: 0;
+    line-height: 32px;
 }
 
 p {
-    color: var(--primary-base);
+    color: var(--primary-neutral);
     margin: 0;
+    line-height: 24px;
 }
 
 @media(min-width: 768px) {
     body {
         background-image: url('./assets/images/background-pattern-desktop.svg');
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
 }
 
 @media(max-width: 768px) {
     body {
         background-image: url('./assets/images/background-pattern-mobile.svg');
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
 }
