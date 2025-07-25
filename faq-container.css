@@ -69,11 +69,11 @@
     display: none;
 }
 
-.faq-container__accordion__item--active .faq-container__accordion__item__content {
+.faq-container__accordion__item__header[aria-expanded="true"]+.faq-container__accordion__item__content {
     display: block;
 }
 
-.faq-container__accordion__item--active .faq-container__accordion__item__header__hide__icon {
+.faq-container__accordion__item__header[aria-expanded="true"] .faq-container__accordion__item__header__hide__icon {
     display: block;
 }
 

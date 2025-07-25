@@ -4,11 +4,14 @@ const accordionItems = document.querySelectorAll(
 
 accordionItems.forEach((item) => {
   const header = item.querySelector(".faq-container__accordion__item__header");
-  header.addEventListener("click", function () {
-    if (item.classList.contains("faq-container__accordion__item--active")) {
-      item.classList.remove("faq-container__accordion__item--active");
-    } else {
-      item.classList.add("faq-container__accordion__item--active");
-    }
-  });
+  header.addEventListener("click",(event)=> toggleAccordion(event,header));
 });
+
+function toggleAccordion(_event,header){
+  if(header.attributes["aria-expanded"].value === "true"){
+    header.attributes["aria-expanded"].value = "false";
+  }
+  else{
+    header.attributes["aria-expanded"].value = "true";
+  }
+}
